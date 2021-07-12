@@ -68,10 +68,10 @@ border:1px solid rgb(26, 126, 169);
   position: fixed;
   z-index: 1;
   top: 0;
- color:white;
+ color:rgb(253, 252, 252);
   left: 0;
   overflow: hidden;
-
+padding-left:20px;
   text-align: center;
 }
 .exp{
