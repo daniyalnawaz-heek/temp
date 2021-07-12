@@ -3,10 +3,11 @@ import {Route,Switch,Link} from 'react-router-dom'
 import Education from './Education';
 import Home from './Home';
 import About from './About';
-import Sample from './Sample'
 
-import Work, { Project } from './Project'
-import Skill from './Skill';
+
+
+import  Project  from './Project'
+
 import Skills from './Skills';
 import Experience from './Experience';
 

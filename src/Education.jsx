@@ -1,10 +1,22 @@
-import React, { Component } from 'react';
+import React, {  useEffect } from 'react';
 import Footer from './Footer';
 import Expertise from './Expertise';
-import Nav from './Nav'
+import Nav from './Nav';
+import {Link} from 'react-router-dom'
+import {AiOutlineHome} from 'react-icons/ai';
+import {BiUpArrowAlt} from 'react-icons/bi';
 
-class Education extends Component {
-  render() {
+function Education() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+ const scrollToTop=()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
     return (
       <div class="edu">
         <Nav header="EDUCATION"/>
@@ -29,12 +41,24 @@ class Education extends Component {
         <Expertise margin="700px" expert="CHIEF SECRETARY AT COMFEST HELD AT SETH ANANDRAM JAIPURIA SCHOOL, KANPUR"/>
         <Expertise margin="300px" expert="COMFEST IS THE LARGEST STUDENT ORGANISED ANNUAL TECHNO-CULTURAL EVENT ORGANISED BY JAIPURIA COMPUTER CLUB​."/>
        
+<button class="up" onClick={scrollToTop}>
+  <BiUpArrowAlt class="up-icon" />
+</button>
+
+
+
+<Link to="/">
+<div class="butt" > 
+         <AiOutlineHome class="butt-icon" />
+         </div>
+         </Link >
+         
         <Footer />
         
         
       </div>
     )
   }
-}
+
 
 export default Education

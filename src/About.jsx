@@ -1,9 +1,21 @@
-import React, { Component } from 'react';
+import React, {  useEffect } from 'react';
 import Footer from './Footer';
-import Nav from './Nav'
+import Nav from './Nav';
+import {Link} from 'react-router-dom'
+import {AiOutlineHome} from 'react-icons/ai';
+import {BiUpArrowAlt} from 'react-icons/bi';
 
-class About extends Component {
-  render() {
+function About(){
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+ const scrollToTop=()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
     return (
       <div class="show1">
         <Nav header="ABOUT"/>
@@ -21,11 +33,20 @@ class About extends Component {
        
 
         </div>
+        
+<button class="up" onClick={scrollToTop}>
+  <BiUpArrowAlt class="up-icon" />
+</button>
+<Link to="/">
+<div class="butt" > 
+         <AiOutlineHome class="butt-icon" />
+         </div>
+         </Link >
         <Footer />
         
       </div>
     )
   }
-}
+
 
 export default About

@@ -1,11 +1,27 @@
-import React from 'react';
+import React,{ useEffect} from 'react';
 import Expertise from './Expertise';
 import Nav from './Nav';
+import {Link} from 'react-router-dom'
+import {AiOutlineHome} from 'react-icons/ai';
+import {BiUpArrowAlt} from 'react-icons/bi';
+
 import Footer from './Footer';
-import {AiOutlineHome} from 'react-icons/ai'
+
 
 
 function Experience() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+ const scrollToTop=()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+
   return (
       <div class="exp">
          <Nav header="EXPERIENCE"/>
@@ -27,9 +43,17 @@ media, direct mail, and web)."/>•
          <Expertise margin="200px" expert="• Gather and refine specifications and requirements based on technical needs."/>
          <Expertise margin="600px" expert="• Create interactive layout/user interface by using standard HTML/CSS practices."/>
 
-         <div class="butt" >
-         <AiOutlineHome />
+<button class="up" onClick={scrollToTop}>
+  <BiUpArrowAlt class="up-icon" />
+</button>
+
+
+
+<Link to="/">
+<div class="butt" > 
+         <AiOutlineHome class="butt-icon" />
          </div>
+         </Link >
        
 
 
