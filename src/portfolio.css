@@ -343,8 +343,8 @@ a.social:active{
 }
 .show1{
   background-image: url("./pexels-dorran-1643280.jpg");
-
-  
+padding-right:20px;
+  padding-left:20px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
