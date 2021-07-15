@@ -25,7 +25,7 @@ class Header extends Component {
             loop: true,}}/>
             <div >
             <FaReact  class="icon"/>
-            <SiRedux class="icon"s/>
+            <SiRedux class="icon"/>
             <SiMongodb class="icon" />
             <FaNodeJs class="icon" />
             <FaPython class="icon" />

@@ -1,22 +1,41 @@
-import React, {Component} from 'react';
+import React, {useEffect} from 'react';
 import Header from './Header';
 
 import Footer from './Footer';
 import Sidebar from './Sidebar';
 import Sample from './Sample';
+import Presenter from './Presenter'
+import Zoom from 'react-reveal/Zoom';
 
 
 
 
-class Home extends Component {
-  render() {
+function Home(){
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
+  
+  
     return (
       <div class="main">
-        
+       
         <Header />
+        
+       
 
+        
+        
+        <Zoom right>
+          <div className="scroll-btn">
+          SCROLL DOWN
+          </div>
+        </Zoom>
+    
+        <Presenter />
         <Sidebar />
-        <div id="scroll">SCROLL DOWN</div>
         <div class="on">
         <Sample link="/about" linkdata="ABOUT" margin="300px"/>
         </div>
@@ -40,6 +59,6 @@ class Home extends Component {
       </div>
     )
   }
-}
+
 
 export default Home

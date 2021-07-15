@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 *{
-  font-family: -apple-system, 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .workleft{
   z-index:2;
@@ -66,11 +66,12 @@ border:1px solid rgb(26, 126, 169);
   height: 100%;
   width: 250px;
   position: fixed;
-  z-index: 1;
-  top: 0;
+  z-index: 3;
+  top: 10px;
  color:rgb(253, 252, 252);
   left: 0;
   overflow: hidden;
+  padding-top: 0px;
 padding-left:20px;
   text-align: center;
 }
@@ -206,6 +207,7 @@ a.social:active{
 .butt{
   position:fixed;
   right:150px;
+  z-index: 3;
   bottom:130px;
   background-color: rgb(5, 5, 5);
   width: 50px;
@@ -227,6 +229,7 @@ a.social:active{
 .up{
   position:fixed;
   left:150px;
+  z-index:3;
   bottom:130px;
   background-color: rgb(5,5,5);
   width: 50px;
@@ -266,6 +269,7 @@ a.social:active{
 .icon{
   padding-left: 80px;
   margin-top:80px;
+  font-size: xx-large;
 }
 
 .expert{
@@ -333,13 +337,36 @@ a.social:active{
   -ms-border-radius:20px ;
   -o-border-radius:20px ;
 }
+.cross{
+  display :flex;
+  color: white;
+  justify-content: center;
+  opacity: 0.8;
+  align-self: center;
+}
+.presenter{
+  color: white;
+  margin-bottom:-30px;
+}
+ .scroll-btn{
+  color:white;
+  border:2px solid rgb(100, 201, 18)e;
+  display:flex;
+ opacity:0.1;
+ z-index: 10;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  
+  position: relative;
+}
 
 .main{
-  background-repeat: no-repeat;
-  background-attachment:scroll;
-  background-size:cover ;
-  background-position: center center;
-  background-image: url("moon.jpg.jpg");
+  background-image: url('./pexels-eberhard-grossgasteiger-1183021.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .show1{
   background-image: url("./pexels-dorran-1643280.jpg");
