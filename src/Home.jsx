@@ -20,7 +20,7 @@ function Home(){
   
   
     return (
-      <div class="main">
+      <div  style={{back  }}class="main">
        
         <Header />
         
